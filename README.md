@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Python Application
 ======================
 This is a simple Python application. This application serves as a basic template for a console application using Python.
@@ -17,3 +18,7 @@ You can run the application in one of the following ways:
 This will start the application.
 
 Happy coding! 🙂
+=======
+# combinatorial-optimizer
+project based on daa algorithms
+>>>>>>> c9f02c23d049eaa91d54d708a98cf0d9819a99ad
