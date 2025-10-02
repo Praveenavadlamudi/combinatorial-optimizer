@@ -1,24 +1,83 @@
-<<<<<<< HEAD
-Python Application
-======================
-This is a simple Python application. This application serves as a basic template for a console application using Python.
+Combinatorial Optimizer
 
-What does this application do?
--------------------------------
-This application prints "Hello, World!" to the console.
+A unified Python framework to solve combinatorial optimization problems like TSP (Traveling Salesman Problem), Knapsack Problem, and Graph Matching using multiple strategies. This project demonstrates classical algorithms and heuristics, compares their performance, and provides an easy-to-use interface for experimentation.
 
-# How to run?
-You can run the application in one of the following ways:
+Features
 
-1. Press `F5`. This will start the application in debug mode.
+TSP (Traveling Salesman Problem)
 
-2. Open a terminal by going to 'View' -> 'Terminal'. Then run:
-    > `python src/main.py`
+Greedy heuristics
 
-This will start the application.
+Finds an approximate shortest tour visiting all cities
 
-Happy coding! 🙂
-=======
-# combinatorial-optimizer
-project based on daa algorithms
->>>>>>> c9f02c23d049eaa91d54d708a98cf0d9819a99ad
+Knapsack Problem
+
+Greedy heuristic for selecting items maximizing value under weight constraints
+
+Extendable framework
+
+Easily add Backtracking, Branch & Bound, Dynamic Programming, and other heuristics
+
+Performance tracking
+
+Measure execution time of each algorithm
+
+Clean and modular code
+
+Organized in separate modules for strategies, utilities, and experiments
+
+Folder Structure
+combinatorial-optimizer/
+│
+├─ main.py                  # Main script to run experiments
+├─ README.md                # Project description
+├─ requirements.txt         # Python dependencies
+├─ strategies/              # Algorithm implementations
+│   ├─ __init__.py
+│   └─ greedy.py
+├─ utils/                   # Utility functions (e.g., performance measurement)
+│   ├─ __init__.py
+│   └─ performance.py
+└─ data/                    # Sample datasets for TSP, Knapsack, etc.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/Praveenavadlamudi/combinatorial-optimizer.git
+cd combinatorial-optimizer
+
+
+Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+Run the main experiment script:
+
+python main.py
+
+
+Modify main.py to test different datasets and algorithms.
+
+Contributing
+
+Contributions are welcome!
+
+Add new strategies (e.g., Backtracking, Branch & Bound)
+
+Improve existing heuristics
+
+Add more datasets for testing
+
+License
+
+This project is open-source and available under the MIT License.
